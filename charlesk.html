@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Kolozsvary</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        @font-face {
+            font-family: 'TeX Gyre Schola';
+            src: url('https://fonts.gstatic.com/s/texgyreschola/v7/ijwKs3bNPflS5ss8CSA0ws2iyLx3flZG7jhWbgQ.woff2') format('woff2');
+        }
+        body {
+            font-family: 'TeX Gyre Schola', serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            min-height: 100vh;
+            position: relative;
+            padding-bottom: 200px; /* space for the footer */
+        }
+        header, .top-bar {
+            text-align: center;
+            margin: 20px 0;
+        }
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        header h1 {
+            margin: 10px 0;
+        }
+        .columns {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            margin: 20px 0;
+        }
+        .column {
+            width: 40%;
+            margin: 0 1%;
+            background-color: #fff;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-right: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .column h2 {
+            text-align: center;
+        }
+        footer {
+            width: 100%;
+            background-color: #4b0082; /* darker purple */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+        }
+        footer h2 {
+            margin-top: 0;
+            color: white;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .top-bar {
+                    width: 100%;
+                    background-color: #4b0082; /* darker purple */
+                    color: white;
+                    padding: 20px 0;
+                    text-align: center;
+                    position: relative;
+                    top: 0;
+                }
+                .top-bar a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 20px;
+                    margin: 0 15px;
+                }
+        section {
+            margin: 20px auto;
+            max-width: 800px;
+            padding-top: 0px;
+            padding-left:5px;
+            padding-right:20px;
+            padding-bottom:0px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        section h3 {
+            text-align: center;
+            font-size: 25px;
+            padding: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+            <a href="resume.pdf" target="_blank">Resume</a>
+            <a href="https://github.com/charlesk26" target="_blank">GitHub</a>
+        </div>
+    <header>
+        <img src="images/cosets.png" alt="Profile Photo">
+        <h1>Charles Kolozsvary</h1>
+    </header>
+    
+    <section>
+        <h3>Some Jokes</h3>
+        <ul>
+            <li>
+                Why did the scarecrow win an award? Because he was out standing in his field.
+            </li>
+            <li>
+                Eating too much cake is the sin of gluttony. Eating too much pie is okay, however, because the sin of pi is always zero.
+            </li>
+            <li>
+                What do you get when you cross a dyslexic, an unwilling agnostic, and an insomniac? You get someone who stays up all night torturing themselves mentally over the question of whether or not there is a dog.
+            </li>
+        </ul>
+    </section>
+    
+    <div class="columns">
+        <div class="column">
+            <h2>Various Things I've Written</h2>
+            <ul>
+                <li>
+                    A bit of history on the Pythagorean theorem and some proofs and consequences of it –– <a href="writing/pythagoras.pdf" target="_blank">pythagoras.pdf</a>
+                </li>
+                <li>
+                    A simple introduction to elliptic curves and their group structure –– <a href="writing/elliptic.pdf" target="_blank">elliptic.pdf</a>
+                </li>
+                <li>
+                    A paper I wrote for a class on Fourier methods. There are some fun plots –– <a href = "writing/fourier.pdf" target = "_blank">fourier.pdf</a>
+                </li>
+                <li>
+                    A fictional short story –– <a href = "writing/devastatingSavior.pdf" target = "_blank">devastatingSavior.pdf</a>
+                </li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Miscelaneous Coding</h2>
+            <ul>
+                <li>
+                    A Python script hosted by streamlit that solves the game <a href = "https://en.wikipedia.org/wiki/Set_(card_game)" target="_blank"><i>Set</i></a> –– <a href="https://tinyurl.com/4wju3x7r" target="_blank">Set Solver</a>
+                </li>
+                <li>
+                    A Python script that finds the desired path given any <a href = "sol.JPEG"target="_blank">japanese triangle</a> from problem 5 of the <a href = "2023IMO.pdf"target="_blank">2023 International Math Olympaid</a> –– <a href="japaneseTriangle.py" target="_blank">japaneseTriangle.py</a>
+                </li>
+                <li>
+                    Python script grid solver for the <a href="https://www.janestreet.com/puzzles/altered-states-2-index/" target = "_blank">June 2024 Jane Street Puzzle</a> <i>Altered States 2</i> –– <a href="https://github.com/charlesk26/alteredStates2" target="_blank">GitHub Repo</a>
+                </li>
+                <li>
+                    Python script solver for the <a href="https://www.janestreet.com/puzzles/die-agony-index/" target = "_blank">December 2022 Jane Street Puzzle</a> <i>Die Agony</i> –– <a href="https://github.com/charlesk26/dieAgony" target="_blank">GitHub Repo</a>
+                </li>
+                <!-- Add more coding projects as needed -->
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:charleskolozsvary@gmail.com">charleskolozsvary@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/charles-kolozsvary-193b65294/" target="_blank">www.linkedin.com/in/charles-kolozsvary-193b65294</a></p>
+    </footer>
+</body>
+</html>
